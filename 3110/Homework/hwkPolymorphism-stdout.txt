@@ -1,0 +1,16 @@
+(Bank account index 0)
+Savings Account Information:
+	Balance: $222.21
+	Interest rate: 1.2%
+
+(Bank account index 1)
+Checking Account Information:
+	Balance: $5.69
+	Last check number processed: 234
+
+(Bank account index 2)
+CD Account Information:
+	Balance: $5000
+	Interest rate: 2.5%
+	Maturity: 6 months
+

@@ -1,0 +1,41 @@
+Please enter the commands filename (or simply press return to use labStl_Inheritance_Polymorphism-commands-short.tab)
+Importing labStl_Inheritance_Polymorphism-commands-short.tab
+Adding 17 ...
+
+Adding 117 ...
+
+Adding 217 ...
+
+Printing 17 ...
+DNA:	Label: CISY_EMENI		ID: 17	Sequence: cttggacagcatggagttctcgagccaaatttgtcggtacactaccttaaacagccctagcgaatctcggcaacatgtgacggttggtatcgtgcgcgcttgtctgggccgggccgatgcgctatag	Length: 127		cDNAStartIndex: 10
+
+RNA:		Label: CISY_EMENI		ID: 117		Sequence: auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua		Length: 114		Type: mRNA
+
+AA:		Label: CISY_EMENI		ID: 217		SequenceMEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL		Length: 38		ORF: 1
+
+Printing 117 ...
+DNA:	Label: CISY_EMENI		ID: 17	Sequence: cttggacagcatggagttctcgagccaaatttgtcggtacactaccttaaacagccctagcgaatctcggcaacatgtgacggttggtatcgtgcgcgcttgtctgggccgggccgatgcgctatag	Length: 127		cDNAStartIndex: 10
+
+RNA:		Label: CISY_EMENI		ID: 117		Sequence: auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua		Length: 114		Type: mRNA
+
+AA:		Label: CISY_EMENI		ID: 217		SequenceMEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL		Length: 38		ORF: 1
+
+Printing 217 ...
+DNA:	Label: CISY_EMENI		ID: 17	Sequence: cttggacagcatggagttctcgagccaaatttgtcggtacactaccttaaacagccctagcgaatctcggcaacatgtgacggttggtatcgtgcgcgcttgtctgggccgggccgatgcgctatag	Length: 127		cDNAStartIndex: 10
+RNA:		Label: CISY_EMENI		ID: 117		Sequence: auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua		Length: 114		Type: mRNA
+
+AA:		Label: CISY_EMENI		ID: 217		SequenceMEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL		Length: 38		ORF: 1
+
+Obliterating 17 ...
+
+Entries: 2
+
+Obliterating 117 ...
+
+Obliterating 217 ...
+
+Printing 12345 ...
+Obliterating 12345 ...
+
+Can not delete DNA (12345), NOT found!
+

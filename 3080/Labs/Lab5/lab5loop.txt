@@ -1,0 +1,90 @@
+Script started on Tue Dec  9 20:09:54 2014
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ cat lab5loop.cpp
+/*Author: Ross Bearden
+Date: 12/10/14
+Class: CSCI 3080
+Assignment: Lab 5
+
+Program 1: This portion of lab 5 will use a funtion with a loop to calculate the following recurrance relation.
+S(1) = 2
+S(n) = 2*S(n-1) + n*2^n
+The value for n will be supplied by the user.
+*/
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+//Function to calculate the recurrance relation using the supplied n
+//Uses a loop to calculate the value
+double FindTerm(double n /*In*/);
+
+int main(){
+	
+	double n = 0;		//Variable to hold the value for n entered by the user
+	
+	cout << "Enter a value greater than 0 for the n of the recurrance relation" << endl;
+	cin >> n;
+	if(n == 0){
+		cerr << "The value entered for n must be greater than 0" << endl;
+		return 1;
+	}
+	cout << "The " << n << "th term is " << FindTerm(n) << endl;
+	
+	return 0; 
+}
+
+//Body of FindTerm
+double FindTerm(double n /*IN*/){
+	
+	double value = 0;			//Used to hold the value of the recurrance relation throughtout calculation
+	
+	//If statment to determine if n is already 1
+	if(n==1){
+		return 2;
+	}
+	else{
+		double i = 2;
+		value = 2;
+	//Loop used to calculate the recurrance relation
+		while( i <= n){
+			value = 2 * value + i * (pow((double)2, i));
+			i++;
+		}
+		return value;
+	}
+}
+			
+			
+			
+			
+			
+			
+			
+	
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ g++ lab5loop.cc pp -o lab5loop
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ ./lab5loop 
+Enter a value greater than 0 for the n of the recurrance relation
+0
+The value entered for n must be greater than 0
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ ./lab5loop 
+Enter a value greater than 0 for the n of the recurrance relation
+1
+The 1th term is 2
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ ./lab5loop 
+Enter a value greater than 0 for the n of the recurrance relation
+2
+The 2th term is 12
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ ./lab5loop 
+Enter a value greater than 0 for the n of the recurrance relation
+3
+The 3th term is 48
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ ./lab5loop 
+Enter a value greater than 0 for the n of the recurrance relation
+4
+The 4th term is 160
+]0;srb5q@ranger1: ~/3080/Labs/Lab5srb5q@ranger1:~/3080/Labs/Lab5$ exit
+exit
+
+Script done on Tue Dec  9 20:10:41 2014

@@ -1,0 +1,25 @@
+
+
+                            Python Programming
+                               Summer 2016
+                                Project 3
+
+
+turnin code:  py_p3
+
+
+Write a python3 module named p3mod.py which can be imported and used as
+in the sample p3rmb.py program.
+
+The module should provide the function named read_one_fasta_entry which
+takes an open file as an argument.  That function *must* be implemented
+as a generator which will, on each invocation, return a single entry
+from a fasta file (e.g. p3sampin).
+
+Note1:  the ">" symbol is *NOT* part of the pegid.
+Note2:  the pegid is terminated by the first whitespace on the line.
+
+To test, I will run p3rmb.py multiple times with various inputs.
+Each test will import your p3mod.py module.
+
+Use turnin to submit only your python source file.

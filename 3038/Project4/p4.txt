@@ -1,0 +1,50 @@
+
+
+                            Python Programming
+                               Summer 2016
+                                Project 4
+
+
+turnin code:  py_p4
+
+
+Write a python3 program that reads a file of sequence ids and sequences
+from the file named as the only command-line argument.  All test input
+files will be some subset of the lines in p4sampin.  Note that p4sampin
+has each id and its sequence on the same line.
+
+Compare all pairs of lines and print out the seqids for the two sequences
+that have the Longest Common Substring.  There is a small function in
+p4starter.py which you should use to perform that calculation for each
+pair of strings.
+
+Note: Your program should do a simple all-to-all comparison, i.e each
+sequence should be compared against every other sequence.  The program
+does not need to skip comparisons that have already been done by any
+process.
+
+Use some facility of your choice from the python3 multiprocessing module
+to perform pair-wise checks in parallel.  A run might look like this:
+
+    ./p4.py 4 inputfilename
+
+where the 4 is the number of worker processes that should do the
+comparisons.  So, if you have a manager process, then you will add 4
+more, but if your main thread participates in the work, then you will
+only add 3 more.  It is valid to assume that the number of workers
+requested on the command-line will range between 1 and 8, inclusive.
+Split the work evenly among the processes to obtain a good speed-up.
+
+If these two sequences had the maximum common string of all in p4sampin:
+
+    seq.1269
+    seq.1623
+
+and if their longest common substring were 104 bytes, then you would
+print this:
+
+    104  seq.1269  seq.1623
+
+
+Use turnin to submit only your python source file.
+

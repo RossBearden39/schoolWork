@@ -1,0 +1,160 @@
+P	245
+A	CISY_EMENI	217	MEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL	38	1
+S
+P	217
+O	217
+O	37
+S
+O	137
+A	O00197_HUMAN	275	MDSSWANFFVYE	12	1
+A	CISY_EMENI	217	MEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL	38	1
+S
+P	275
+O	37
+O	275
+O	217
+S
+O	117
+R	O00197_HUMAN	175	auggauucgagcugggcuaauuucuucguuuaugag	36	tRNA
+D	CISY_EMENI	17	cttggacagcatggagttctcgagccaaatttgtcggtacactaccttaaacagccctagcgaatctcggcaacatgtgacggttggtatcgtgcgcgcttgtctgggccgggccgatgcgctatag	127	10
+R	MGR8_HUMAN	110	augguugggacucagacaggcccgguaaguagcagcucagaccaugaacggaucguaaaagaucucuua	69	mRNA
+S
+P	175
+O	110
+O	17
+O	175
+O	17
+S
+O	269
+D	O00197_HUMAN	75	ctccattatggattcgagctgggctaatttcttcgtttatgagtaa	46	7
+D	PK3CD_HUMAN	87	tattgatgtgttgccgtgataggtatggctgcttccggcttgccatacagctcggcacgctga	63	24
+A	CISY_EMENI	217	MEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL	38	1
+R	MGR8_HUMAN	110	augguugggacucagacaggcccgguaaguagcagcucagaccaugaacggaucguaaaagaucucuua	69	mRNA
+S
+P	75
+O	75
+O	58
+O	217
+O	87
+O	110
+S
+O	187
+A	EAA5_HUMAN	258	MVFSTEPK	8	-2
+A	PK3CD_HUMAN	287	MAASGLPYSSAR	12	-3
+A	CISY_EMENI	217	MEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL	38	1
+D	MGR8_HUMAN	10	tatggcggaaatggttgggactcagacaggcccggtaagtagcagctcagaccatgaacggatcgtaaaagatctcttatga	82	10
+R	O00197_HUMAN	175	auggauucgagcugggcuaauuucuucguuuaugag	36	tRNA
+S
+P	217
+O	258
+O	37
+O	217
+O	287
+O	10
+O	175
+S
+O	287
+R	CISY_EMENI	117	auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua	114	mRNA
+D	PK3CD_HUMAN	87	tattgatgtgttgccgtgataggtatggctgcttccggcttgccatacagctcggcacgctga	63	24
+A	P3C2A_HUMAN	278	MPAYRSDVLILLLSCPDAARGIVQ	24	1
+A	EAA5_HUMAN	258	MVFSTEPK	8	-2
+R	O00197_HUMAN	175	auggauucgagcugggcuaauuucuucguuuaugag	36	tRNA
+A	MGR8_HUMAN	210	MVGTQTGPVSSSSDHERIVKDLL	23	-2
+S
+P	117
+O	117
+O	278
+O	87
+O	258
+O	78
+O	175
+O	210
+S
+O	287
+R	DPYL2_BOVIN	169	augccggcugaaugcgcuuguaaaagggcugugggcgug	39	tRNA
+D	P3C2A_HUMAN	78	tgccacagcactagcagaatatcgaatgcctgcgtaccgctcagacgtactcattctgctcctctcctgtccggacgcagcccggggtatcgtgcagtga	100	25
+R	MGR8_HUMAN	110	augguugggacucagacaggcccgguaaguagcagcucagaccaugaacggaucguaaaagaucucuua	69	mRNA
+A	PK3CD_HUMAN	287	MAASGLPYSSAR	12	-3
+R	O00197_HUMAN	175	auggauucgagcugggcuaauuucuucguuuaugag	36	tRNA
+R	CISY_EMENI	117	auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua	114	mRNA
+A	EAA5_HUMAN	258	MVFSTEPK	8	-2
+S
+P	258
+O	117
+O	78
+O	287
+O	169
+O	175
+O	110
+O	258
+O	17
+S
+P	217
+D	O00197_HUMAN	75	ctccattatggattcgagctgggctaatttcttcgtttatgagtaa	46	7
+A	EAA5_HUMAN	258	MVFSTEPK	8	-2
+R	HS90A_PIG	137	auggcucaguucguggcgacaacugugcucgguacugcucgagguguuggucaaguuagacaaaca	66	mRNA
+R	DPYL2_BOVIN	169	augccggcugaaugcgcuuguaaaagggcugugggcgug	39	tRNA
+R	CISY_EMENI	117	auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua	114	mRNA
+A	PK3CD_HUMAN	287	MAASGLPYSSAR	12	-3
+R	MGR8_HUMAN	110	augguugggacucagacaggcccgguaaguagcagcucagaccaugaacggaucguaaaagaucucuua	69	mRNA
+R	P3C2A_HUMAN	178	augccugcguaccgcucagacguacucauucugcuccucuccuguccggacgcagcccgggguaucgugcag	72	mRNA
+S
+P	258
+O	258
+O	169
+O	110
+O	117
+O	74
+O	287
+O	137
+O	178
+O	75
+S
+O	58
+A	MGR8_HUMAN	210	MVGTQTGPVSSSSDHERIVKDLL	23	-2
+R	EAA5_HUMAN	158	auggucuucucgacagaaccuaaa	24	mRNA
+R	PK3CD_HUMAN	187	auggcugcuuccggcuugccauacagcucggcacgc	36	tRNA
+D	O04138_ORYSA	74	gaatagccagaatagcttaatgcccttatttcccttgaacccatcccggggggagacgagtatgggctttctttgcctactacgagtgtaa	91	19
+R	DPYL2_BOVIN	169	augccggcugaaugcgcuuguaaaagggcugugggcgug	39	tRNA
+D	P3C2A_HUMAN	78	tgccacagcactagcagaatatcgaatgcctgcgtaccgctcagacgtactcattctgctcctctcctgtccggacgcagcccggggtatcgtgcagtga	100	25
+R	HS90A_PIG	137	auggcucaguucguggcgacaacugugcucgguacugcucgagguguuggucaaguuagacaaaca	66	mRNA
+A	CISY_EMENI	217	MEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL	38	1
+A	O00197_HUMAN	275	MDSSWANFFVYE	12	1
+S
+P	210
+O	217
+O	78
+O	158
+O	169
+O	275
+O	74
+O	187
+O	10
+O	210
+O	137
+S
+O	87
+R	PK3CD_HUMAN	187	auggcugcuuccggcuugccauacagcucggcacgc	36	tRNA
+R	MGR8_HUMAN	110	augguugggacucagacaggcccgguaaguagcagcucagaccaugaacggaucguaaaagaucucuua	69	mRNA
+R	EAA5_HUMAN	158	auggucuucucgacagaaccuaaa	24	mRNA
+A	CISY_EMENI	217	MEFSSQICRYTTLNSPSESRQHVTVGIVRACLGRADAL	38	1
+D	O00197_HUMAN	75	ctccattatggattcgagctgggctaatttcttcgtttatgagtaa	46	7
+D	DPYL2_BOVIN	69	gaagagagtggcaatgtcgtcgaaggtcaagacacccacgggctcatgccggctgaatgcgcttgtaaaagggctgtgggcgtgtga	87	45
+R	CISY_EMENI	117	auggaguucucgagccaaauuugucgguacacuaccuuaaacagcccuagcgaaucucggcaacaugugacgguugguaucgugcgcgcuugucugggccgggccgaugcgcua	114	mRNA
+A	P3C2A_HUMAN	278	MPAYRSDVLILLLSCPDAARGIVQ	24	1
+D	HS90A_PIG	37	gcacccgcagtgatgaacgagatggctcagttcgtggcgacaactgtgctcggtactgctcgaggtgttggtcaagttagacaaacataa	90	21
+D	O04138_ORYSA	74	gaatagccagaatagcttaatgcccttatttcccttgaacccatcccggggggagacgagtatgggctttctttgcctactacgagtgtaa	91	19
+S
+P	110
+O	117
+O	278
+O	75
+O	187
+O	37
+O	110
+O	74
+O	217
+O	158
+O	37
+O	69
+S

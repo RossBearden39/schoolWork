@@ -1,0 +1,28 @@
+
+                             Operating Systems
+                                  Fall 2015
+                                  Project 1
+
+
+turnin code:  os_p1
+
+Write a program that forks a second process when run.  The parent should
+print its own pid AND the pid of the child when it is successfully forked.
+
+The parent process should catch SIGINT and print a message to the user
+saying that it should be killed by SIGQUIT.  If the parent receives
+SIGQUIT, it should send a SIGUSR2 to the child and continue executing;
+the parent will terminate after it receives SIGCHLD for the child.
+The parent should "reap" the terminating child by handling the SIGCHLD
+signal, and print the status of the child that terminated.  It may be
+advisable to setup signal handlers in the parent after forking the child,
+else the child may inherit some signal dispositions from the parent.
+
+If the child receives a SIGUSR1, it will print its own pid and continue to
+execute.  It will print its pid and terminate if it receives a SIGUSR2.
+
+The parent and child would normally be doing useful work while waiting
+for signals, but can simply be in an infinite loop for this project.
+
+Since there will be a single C program for this project, you should
+only turnin that one C program, i.e. NOT a tar file.

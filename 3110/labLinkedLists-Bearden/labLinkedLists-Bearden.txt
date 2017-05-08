@@ -1,0 +1,18 @@
+Please enter the commands filename (or simply press return to use labLinkedLists-commands-short.tab)
+Importing labLinkedLists-commands-short.tab
+Adding 12345 ...
+
+Printing 12345 ...
+DNA:	Label: taxon1	ID: 12345	Sequence: agtcgatcagaagatctcct	Length: 20	cDNAStartIndex: -1
+
+Obliterating 12345 ...
+
+Entries: 0
+
+Printing 9999 ...
+Can not find item (9999)!
+
+Obliterating 9999 ...
+
+Can not delete DNA (9999), NOT found!
+

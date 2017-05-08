@@ -1,0 +1,81 @@
+
+                        Operating Systems
+                            Project 6
+                            Fall 2015
+
+
+turnin id:  os_p6
+
+
+Write a pair of C/C++ programs that create and access a persistent
+shared memory area.  The first program should compile and link as 
+p6w and the second should compile and link as p6r.  The shared 
+memory area should be the size of a page on the host system.  It
+will be required to have a name in /dev/shm, so name it the same
+as your login id with _shm attached.  Thus, mine would be named
+rbutler_shm.
+
+p6w will take one or more command-line arguments, each of which is
+an integer; so some sample runs of it might be:
+    ./p6w 11 22 33 44
+    ./p6w 10000 20000 777 999 123 44
+
+p6w should convert each argument into an integer and place it into 
+the persistent shared memory area.  You may assume that it will not
+be asked to store more than 100 integers total in the memory area.
+It should store the current number of integers somewhere in the area
+such that it will not be over-written.  Access to the area should 
+be protected with a semaphore in case multiple instances of p6w are
+run at once, e.g.:
+    ./p6w 11 22 33 44 55  &  ./p6w 66 77 88 99 
+Note that the integers for such a run *may* be intermixed.
+The semaphore should be named your login id with _sem.  Thus, mine
+would be named rbutler_sem.
+
+Useful example system calls for p6w would be:
+
+    SHM_SIZE = sysconf( _SC_PAGE_SIZE );
+    shmfd = shm_open(shmfn, O_CREAT|O_RDWR|O_TRUNC, mode);
+    rc = ftruncate(shmfd,SHM_SIZE);
+    shmptr = mmap((void *)NULL, SHM_SIZE, PROT_WRITE|PROT_READ, MAP_SHARED, shmfd, 0);
+    semptr = sem_open(semfn, O_CREAT, 0644, 0);  // 0 -> locked
+    sem_post(semptr);
+    close(shmfd);
+    munmap(shmptr,SHM_SIZE);
+    msync()
+    sem_close(semptr);
+
+
+p6r will be run once after multiple runs of p6w.  p6r should print
+the integers in the shared memory area and then delete the area.
+
+Useful example system calls for p6r would be:
+
+    SHM_SIZE = sysconf( _SC_PAGE_SIZE );
+    shmfd = shm_open(shmfn, O_RDWR, 0);  // 0: mode
+    shmptr = mmap((void *)NULL, SHM_SIZE, PROT_WRITE|PROT_READ, MAP_SHARED, shmfd, 0);
+    semptr = sem_open(semfn, 0, 0644, 0);
+    if (sem_wait(semptr) == 0)  // got the lock
+    munmap(shmptr,SHM_SIZE);
+    close(shmfd);
+    sem_close(semptr);
+    shm_unlink(shmfn);
+    sem_unlink(semfn);
+
+During testing, if your program does not successfully remove the items in
+/dev/shm, you can remove them yourself from the command line.  For example,
+I might remove mine this way:
+    rm /dev/shm/rbutler_shm
+    rm /dev/shm/rbutler_sem
+
+TURNIN info:
+    You should submit a tar file of a directory which contains all of the
+    required files (makefile, C source files, header files, etc.).
+    Sample tar command to create a tar file from a dir:
+	tar cvf p6.tar ./p6dir  ## do *NOT* use full pathname of the dir
+    After un-tarring your project, I will cd to the dir containing
+    it and type:
+        rm -rf p6r p6w
+        make
+    It should build both executables named p6r and p6w.
+    Then I will test it by running p6w a few times followed by p6r.
